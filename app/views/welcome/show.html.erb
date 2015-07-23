@@ -4,7 +4,7 @@
 	<%= link_to 'Log out!', logout_path, class: "round secondary button left", id: "logout-button" %>
 	<h6 class="text-center">You're logged in as <%= current_user.uid %>.</h3>
 <% else %>
-	<%= link_to 'Log in with tumblr', 'auth/tumblr/', class: "round secondary button" %>
+	<%= link_to 'Log in with tumblr', '/auth/tumblr', class: "round secondary button" %>
 <% end %>
 
 <% if current_user %>
