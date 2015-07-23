@@ -1,0 +1,81 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require foundation_and_overrides
+
+ */
+
+body {
+  background-color: #35465c;
+}
+
+h1#main-header {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h6 {
+  color: white;
+  font-style: italic;
+  margin-bottom: 60px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#top-bar li {
+  background-color: #35465c;
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+li {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+}
+
+.poster {
+  text-decoration: underline;
+}
+
+#post-button {
+  float: right;
+}
+
+.new-post {
+  padding: 20px;
+  margin: 20px;
+}
+
+.new-post label {
+  color: white;
+}
+
+#post-button {
+  margin-right: 20px;
+}
+
+#logout-button {
+  margin-left: 20px;
+}
+
+.post-tags {
+  font-size: 0.6em;
+  font-style: italic;
+  color: #777777;
+}

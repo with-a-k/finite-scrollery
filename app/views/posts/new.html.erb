@@ -1,0 +1,11 @@
+<div class="new-post">
+	<%= form_tag do %>
+		<%= label_tag(:title, "Post title") %>
+		<%= text_field_tag(:title) %>
+		<%= label_tag(:body, "Main text of post") %>
+		<%= text_field_tag(:body) %>
+		<%= label_tag(:tags, "Comma-separated tags") %>
+		<%= text_field_tag(:tags) %>
+		<%= submit_tag("Post!", class: "button success round") %>
+	<% end %>
+</div>

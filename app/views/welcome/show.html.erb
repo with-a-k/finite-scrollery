@@ -1,0 +1,27 @@
+<h1 id="main-header" class="text-center">Infinite Scrollery</h1>
+<% if current_user %>
+	<%= link_to 'Post!', post_path, class: "round secondary button right", id: "post-button" %>
+	<%= link_to 'Log out!', logout_path, class: "round secondary button left", id: "logout-button" %>
+	<h6 class="text-center">You're logged in as <%= current_user.uid %>.</h3>
+<% else %>
+	<%= link_to 'Log in with tumblr', login_path, class: "round secondary button" %>
+<% end %>
+
+<% if current_user %>
+	<ul>
+		<% @posts.each do |post| %>
+			<li>
+				<span class="poster"><%= post["blog_name"] %></span><br>
+				<% if post["title"] %>
+					<strong><%= post["title"] %>:</strong>
+				<% end %>
+				<%= raw(post["body"]) %>
+				<% if post["tags"] %>
+					<% post["tags"].each do |tag| %>
+						<span class="post-tags"><%= tag %>, </span>
+					<% end %>
+				<% end %>
+			</li>
+		<% end %>
+	</ul>
+<% end %>
