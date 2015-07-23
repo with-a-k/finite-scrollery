@@ -13,7 +13,7 @@
 /tmp
 
 # Ignore omniauth initializer.
-/config/initializers/omniauth.rb
+
 
 # Ignore .DS_STORE.
 /.DS_Store
