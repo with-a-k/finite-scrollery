@@ -1,4 +1,4 @@
-<h1 id="main-header" class="text-center">Infinite Scrollery</h1>
+<h1 id="main-header" class="text-center">Finite Scrollery</h1>
 <% if current_user %>
 	<%= link_to 'Post!', post_path, class: "round secondary button right", id: "post-button" %>
 	<%= link_to 'Log out!', logout_path, class: "round secondary button left", id: "logout-button" %>
@@ -10,7 +10,7 @@
 <% if current_user %>
 	<ul>
 		<% @posts.each do |post| %>
-			<li>
+			<li class="post">
 				<span class="poster"><%= post["blog_name"] %></span><br>
 				<% if post["title"] %>
 					<strong><%= post["title"] %>:</strong>

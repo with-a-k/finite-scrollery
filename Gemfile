@@ -26,6 +26,7 @@ gem "tumblr_client"
 gem 'figaro'
 
 gem 'foundation-rails'
+gem 'rails_12factor'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -49,6 +50,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'mocha'
+  gem 'vcr'
+  gem 'webmock'
 end
 

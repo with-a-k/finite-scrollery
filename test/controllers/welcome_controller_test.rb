@@ -2,6 +2,11 @@ require 'test_helper'
 
 class WelcomeControllerTest < ActionController::TestCase
   test "fetches posts" do
-    # but the tumblr_client is attached to the user, not the controller...
+    # VCR.use_cassette('isa_posts') do
+    #   get :show, :uid => 'infinitescrollofawe'
+    #   assert_response :success
+    #   assert_not_nil assigns(:posts)
+    #   assert_select "li.post"
+    # end
   end
 end
